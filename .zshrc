@@ -77,7 +77,7 @@ alias ..='cd ../../'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
  
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export CLICOLOR=1
 export LSCOLORS='Bxfxcxdxbxegedabagacad'
 export EDITOR=/usr/bin/vim
