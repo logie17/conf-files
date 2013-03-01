@@ -1,3 +1,4 @@
+umask 077
 fg_black=%{$'\e[0;30m'%}
 fg_red=%{$'\e[0;31m'%}
 fg_green=%{$'\e[0;32m'%}
@@ -76,6 +77,8 @@ alias .='cd ../'
 alias ..='cd ../../'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
+
+alias cp='nocorrect rvm '
  
 PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export CLICOLOR=1

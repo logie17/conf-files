@@ -1,0 +1,14 @@
+*
+!.*
+.DS_Store
+*.sw*
+*~
+*history*
+.CFUserTextEncoding
+.gitconfig
+.lesshst
+.rnd
+.viminfo
+.zcompdump
+.zsh-histfile
+.ssh
