@@ -1,5 +1,7 @@
 *
 !.*
+!.emacs.d/*
+!.vim/*
 .DS_Store
 *.sw*
 *~
@@ -12,3 +14,4 @@
 .zcompdump
 .zsh-histfile
 .ssh
+.vim/.netrwhist

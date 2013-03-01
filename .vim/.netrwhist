@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/loganbell/work/DBIx-Class-Indexed-0.02'
-let g:netrw_dirhist_2='/Users/loganbell/work'
-let g:netrw_dirhist_3='/Users/loganbell/work/DBIx-Class-Indexer-WebService-Dezi'
-let g:netrw_dirhist_4='/Users/loganbell/work'
-let g:netrw_dirhist_5='/Users/loganbell/work/Data-Classifier-NaiveBayes'
-let g:netrw_dirhist_6='/Users/loganbell/.emacs.d'
