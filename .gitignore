@@ -1,5 +1,6 @@
 *
 !.*
+!.dzil/*
 !.emacs.d/*
 !.vim/*
 .DS_Store
