@@ -86,3 +86,8 @@ export LSCOLORS='Bxfxcxdxbxegedabagacad'
 export EDITOR=/usr/bin/vim
 [[ -s "/Users/loganbell/.rvm/scripts/rvm" ]] && source "/Users/loganbell/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 source ~/perl5/perlbrew/etc/bashrc
+
+# Setup command-line editing
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
