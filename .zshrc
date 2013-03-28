@@ -77,6 +77,7 @@ alias .='cd ../'
 alias ..='cd ../../'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
+alias nack='ack -a --nogroup'
 
 alias cp='nocorrect rvm '
  

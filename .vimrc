@@ -1,13 +1,13 @@
 "~~~General Vim Settings~~~
 "
 " set tabs widths
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 " use spaces
 set expandtab
 " colorscheme
 set background=dark
-colorscheme solarized
+" colorscheme solarized
 syntax enable
 " highliting matched search
 set hls

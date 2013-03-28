@@ -1,3 +1,6 @@
-(add-to-list 'load-path "~/.emacs.d/emacs-color-theme-solarized")
-(require 'solarized-light-theme)
-
+(add-to-list 'load-path "~/.emacs.d/color-theme-6.6.0")
+(require 'color-theme)
+(eval-after-load "color-theme"
+  '(progn
+     (color-theme-initialize)
+     (color-theme-hober)))
