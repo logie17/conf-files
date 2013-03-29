@@ -78,6 +78,7 @@ alias ..='cd ../../'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
 alias nack='ack -a --nogroup'
+alias vimg='vim -p $(git ls-files -m -z)'
 
 alias cp='nocorrect rvm '
  
