@@ -35,6 +35,7 @@ filetype plugin on
 map <C-T> <Esc>:tabnew<CR>
 map <C-S> <Esc>:set expandtab<CR>
 map <C-Tab> <Esc>:set noexpandtab<CR>
+map <C-c> :s/^/#/
                 
 "Allows perlbrew to work
 if filereadable($HOME . "/perl5/perlbrew/etc/bashrc")
@@ -84,3 +85,4 @@ endfunction
 command! -nargs=? -range=% Space2Tab call IndentConvert(<line1>,<line2>,0,<q-args>)
 command! -nargs=? -range=% Tab2Space call IndentConvert(<line1>,<line2>,1,<q-args>)
 command! -nargs=? -range=% RetabIndent call IndentConvert(<line1>,<line2>,&et,<q-args>)
+
