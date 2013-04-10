@@ -7,3 +7,5 @@
      (color-theme-initialize)
      (color-theme-hober)))
 (eval-after-load "compile" '(require 'compilation-perl))
+
+(global-set-key (kbd "C-x m") 'magit-status)
