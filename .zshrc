@@ -82,7 +82,7 @@ alias vimg='vim -p $(git ls-files -m -z)'
 
 alias cp='nocorrect rvm '
  
-PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin:$GOPATH/bin # Add RVM to PATH for scripting
 export CLICOLOR=1
 export LSCOLORS='Bxfxcxdxbxegedabagacad'
 export EDITOR=/usr/bin/vim
