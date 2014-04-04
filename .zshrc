@@ -48,4 +48,4 @@ source $ZSH/oh-my-zsh.sh
 source ~/perl5/perlbrew/etc/bashrc
 alias cp='nocorrect rvm '
  
-PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.rvm/bin:$GOPATH/bin # Add RVM to PATH for scripting
+PATH=/usr/local/share/npm/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.rvm/bin:$GOPATH/bin # Add RVM to PATH for scripting
