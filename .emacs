@@ -20,3 +20,5 @@
 (package-initialize)
 (custom-set-variables
 '(grep-find-command "find . ! -name '*~' ! -name '.#*' ! -name '#*#' ! -name TAGS ! -name .emacs.desktop ! -path '*/.git/*' ! -path '*/.svn/*' -type f -print0 | xargs -0 -e grep -n "))
+
+(setq inferior-lisp-program "lein repl")
