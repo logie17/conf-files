@@ -25,6 +25,7 @@ set titleold=
 set textwidth=0
 
 set iskeyword+=$
+
 set iskeyword+=%
 set iskeyword+=@
 set iskeyword-=,
