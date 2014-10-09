@@ -47,5 +47,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 source ~/perl5/perlbrew/etc/bashrc
 alias cp='nocorrect rvm '
+export GOPATH=$HOME/go
  
 PATH=/usr/local/share/npm/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.rvm/bin:$GOPATH/bin # Add RVM to PATH for scripting
