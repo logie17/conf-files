@@ -28,3 +28,7 @@
 (setq-default tab-width 2)
 (setq js-indent-level 2)
 (setq system-uses-terminfo nil)
+
+(add-to-list 'load-path "~/.emacs.d/lisp")
+
+(load "gud")
