@@ -30,7 +30,7 @@ set iskeyword+=%
 set iskeyword+=@
 set iskeyword-=,
 
-setlocal spell spelllang=en_us
+"setlocal spell spelllang=en_us
 filetype plugin on
 
 map <C-T> <Esc>:tabnew<CR>
