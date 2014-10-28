@@ -1,2 +1,2 @@
 #unalias ...
-unset -f cd # This overrides the crazy ass cd function in directors.zsh
+#unset -f cd # This overrides the crazy ass cd function in directors.zsh

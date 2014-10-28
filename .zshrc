@@ -9,7 +9,6 @@ ZSH_THEME="miloshadzic"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -43,11 +42,13 @@ ZSH_THEME="miloshadzic"
 plugins=(git perl osx ruby)
 
 source $ZSH/oh-my-zsh.sh
+unalias ...
+DDD=$HOME/...
 
 # Customize to your needs...
-source ~/perl5/perlbrew/etc/bashrc
+#source ~/perl5/perlbrew/etc/bashrc
 alias cp='nocorrect rvm '
 export GOPATH=$HOME/go
  
-PATH=/usr/local/share/npm/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.rvm/bin:$GOPATH/bin # Add RVM to PATH for scripting
+PATH=$DDD/bin:/usr/local/share/npm/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.rvm/bin:$GOPATH/bin # Add RVM to PATH for scripting
 [[ $TERM == eterm-color ]] && export TERM=xterm
