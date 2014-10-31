@@ -46,8 +46,11 @@ unalias ...
 DDD=$HOME/...
 
 # Customize to your needs...
+if [ -f $HOME/.rvm/scripts/rvm ]; then
+    source $HOME/.rvm/scripts/rvm
+fi
 alias cp='nocorrect rvm '
 export GOPATH=$HOME/go
- 
-PATH=$DDD/bin:/usr/local/share/npm/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.rvm/bin:$GOPATH/bin # Add RVM to PATH for scripting
+
+PATH=$HOME/.rvm/gems/ruby-2.1.4/bin:$DDD/bin:/usr/local/share/npm/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.rvm/bin:$GOPATH/bin
 [[ $TERM == eterm-color ]] && export TERM=xterm
