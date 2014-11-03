@@ -32,3 +32,5 @@
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
 (load "gud")
+
+(global-set-key (kbd "C-x gg") 'magit-status)
