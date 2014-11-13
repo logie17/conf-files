@@ -22,15 +22,30 @@
 '(grep-find-command "find . ! -name '*~' ! -name '.#*' ! -name '#*#' ! -name TAGS ! -name .emacs.desktop ! -path '*/.git/*' ! -path '*/.svn/*' -type f -print0 | xargs -0 -e grep -n "))
 
 (setq inferior-lisp-program "lein repl")
- 
-;; No tabs and 2 space width
+
+;; cperl mode setup by default
+(defalias 'perl-mode 'cperl-mode)
+(setq cperl-hairy                      t
+      cperl-brace-offset               0
+      cperl-extra-newline-before-brace t
+      cperl-close-paren-offset         (- cperl-indent-level)
+      cperl-indent-parens-as-block     t
+      cperl-indent-level               2)
+
+;; tab setup
 (setq-default indent-tabs-mode nil)
-(setq-default tab-width 2)
+(setq tab-width 2)
 (setq js-indent-level 2)
 (setq system-uses-terminfo nil)
 
+;; i think i know lisp
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
+;; not sure why i have this
 (load "gud")
 
+;; keybindings
 (global-set-key (kbd "C-x gg") 'magit-status)
+
+
+(require 'perlbrew)
