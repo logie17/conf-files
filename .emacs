@@ -27,10 +27,11 @@
 (defalias 'perl-mode 'cperl-mode)
 (setq cperl-hairy                      t
       cperl-brace-offset               0
-      cperl-extra-newline-before-brace t
-      cperl-close-paren-offset         (- cperl-indent-level)
+      cperl-extra-newline-before-brace nil
+      cperl-close-paren-offset         0
       cperl-indent-parens-as-block     t
-      cperl-indent-level               2)
+      cperl-electric-keywords          t
+      cperl-indent-level               0)
 
 ;; tab setup
 (setq-default indent-tabs-mode nil)

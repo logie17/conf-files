@@ -50,9 +50,14 @@ if [ -f $HOME/.rvm/scripts/rvm ]; then
     source $HOME/.rvm/scripts/rvm
 fi
 alias cp='nocorrect rvm '
+
+# Go things
+if [ -f /usr/local/share/zsh/site-functions ]; then
+    source /usr/local/share/zsh/site-functions
+fi
 export GOPATH=$HOME/go
 
-PATH=$HOME/.rvm/gems/ruby-2.1.4/bin:$DDD/bin:/usr/local/share/npm/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.rvm/bin:$GOPATH/bin
+PATH=$HOME/.rvm/gems/ruby-2.1.4/bin:$DDD/bin:/usr/local/share/npm/bin:$HOME/bin:/usr/local/bin:$PATH:$HOME/.rvm/bin:$GOPATH/bin:/usr/local/opt/go/libexec/bin
 [[ $TERM == eterm-color ]] && export TERM=xterm
 
 if [ -f $HOME/perl5/perlbrew/etc/bashrc ]; then
