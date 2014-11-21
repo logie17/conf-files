@@ -28,10 +28,10 @@
 (setq cperl-hairy                      t
       cperl-brace-offset               0
       cperl-extra-newline-before-brace nil
-      cperl-close-paren-offset         0
+      cperl-close-paren-offset         -2
+      cperl-indent-level               2
       cperl-indent-parens-as-block     t
-      cperl-electric-keywords          t
-      cperl-indent-level               0)
+      cperl-electric-keywords          t)
 
 ;; tab setup
 (setq-default indent-tabs-mode nil)
