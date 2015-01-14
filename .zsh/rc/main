@@ -63,3 +63,7 @@ PATH=$HOME/.rvm/gems/ruby-2.1.4/bin:$DDD/bin:/usr/local/share/npm/bin:$HOME/bin:
 if [ -f $HOME/perl5/perlbrew/etc/bashrc ]; then
     source ~/perl5/perlbrew/etc/bashrc
 fi
+
+post () {
+    curl -v -X POST $1 -d @-
+}
