@@ -48,5 +48,6 @@
 ;; keybindings
 (global-set-key (kbd "C-x gg") 'magit-status)
 
-
+(add-to-list 'load-path (concat (getenv "GOPATH")  "/src/github.com/golang/lint/misc/emacs"))
+(require 'golint)
 (require 'perlbrew)
