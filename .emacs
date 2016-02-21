@@ -51,3 +51,5 @@
 (add-to-list 'load-path (concat (getenv "GOPATH")  "/src/github.com/golang/lint/misc/emacs"))
 (require 'golint)
 (require 'perlbrew)
+(add-to-list 'load-path "~/.emacs.d/custom")
+(load "filetypes.el")
