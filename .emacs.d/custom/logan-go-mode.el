@@ -1,6 +1,10 @@
 (provide 'logan-go-mode)
 
 (require 'go-mode)
+(require 'go-autocomplete)
+(require 'auto-complete-config)
+(add-hook 'go-mode-hook 'auto-complete-mode)
+(ac-config-default)
 
 (defun go-run-region-locally ()
   "run the selected code as though it is golang code"
@@ -20,3 +24,4 @@
   (define-key logan-go-mode-map (kbd "C-x r r") 'go-run-region-locally)
   (define-key logan-go-mode-map (kbd "C-x r f") 'go-run-file-locally)
   )
+
