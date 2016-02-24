@@ -1,8 +1,10 @@
 node_modules
 .sw*
+*.*~
 *~
 \#*\#
 .#*
 .emacs.desktop*
 *.sw?
 npm-debug.log
+~
