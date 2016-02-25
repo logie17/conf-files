@@ -23,5 +23,10 @@
   "Logan Let's Go!!!"
   (define-key logan-go-mode-map (kbd "C-x r r") 'go-run-region-locally)
   (define-key logan-go-mode-map (kbd "C-x r f") 'go-run-file-locally)
+  (define-key go-mode-map (kbd "C-x r c") 'go-test-current-file)
+  (define-key go-mode-map (kbd "C-x r t") 'go-test-current-test)
+  (define-key go-mode-map (kbd "C-x r p") 'go-test-current-project)
+  (define-key go-mode-map (kbd "C-x r b") 'go-test-current-benchmark)
+  (define-key go-mode-map (kbd "C-x r x") 'go-run)
   )
 
