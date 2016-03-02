@@ -79,6 +79,9 @@ alias ...='cd ../../../'
 alias ....='cd ../../../../'
 alias nack='ack -a --nogroup'
 alias gm='vim -p $(git ls-files -m -z)'
+alias cd_authgo='cd ~/go/src/github.com/MediaMath/auth.go'
+alias cd_login='cd ~/go/src/github.com/MediaMath/login'
+alias cd_janus='cd ~/go/src/github.com/MediaMath/janus'
 
 alias cp='nocorrect rvm '
  
