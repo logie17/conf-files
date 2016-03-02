@@ -69,6 +69,8 @@
 
     go-mode
 
+    gotest
+
     perlbrew
 
     auto-complete
