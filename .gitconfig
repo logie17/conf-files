@@ -1,0 +1,11 @@
+[user]
+	name = Logan Bell
+	email = loganbell@gmail.com
+
+[alias]
+    hist = log --graph --all --color=always --decorate
+    shist = log --graph --color=always --decorate
+[core]
+	editor = /usr/bin/vim
+[push]
+	default = simple
