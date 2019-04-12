@@ -31,22 +31,22 @@ function parse_git_dirty {
   untracked_icon=$'\u2753'
   new_icon=$'\u002b'
 	if [ "${renamed}" == "0" ]; then
-		bits=">${bits}"
+		bits="> ${bits}"
 	fi
 	if [ "${ahead}" == "0" ]; then
-		bits="*${bits}"
+		bits="* ${bits}"
 	fi
 	if [ "${newfile}" == "0" ]; then
-		bits="${new_icon}${bits}"
+		bits="${new_icon} ${bits}"
 	fi
 	if [ "${untracked}" == "0" ]; then
-		bits="${untracked_icon}${bits}"
+		bits="${untracked_icon} ${bits}"
 	fi
 	if [ "${deleted}" == "0" ]; then
-		bits="${deleted_icon}${bits}"
+		bits="${deleted_icon} ${bits}"
 	fi
 	if [ "${dirty}" == "0" ]; then
-		bits="${dirty_icon}${bits}"
+		bits="${dirty_icon} ${bits}"
 	fi
 	if [ ! "${bits}" == "" ]; then
 		echo "${bits}"
@@ -82,9 +82,11 @@ BGCYAN='\[\e[1;36m\]'
 WHITE='\[\e[0;37m\]'
 BWHITE='\[\e[1;37m\]'
 BGWHITE='\[\e[1;37m\]'
+PGREEN='\[\e[32;40m\]'
+PROMPT_ARROW=$'\u2630'
 
 # ls coloring
 export CLICOLOR=true
 export LSCOLORS=Dxfxcxdxbxegedabagacad
 
-export PS1="\`parse_git_branch\`\[\e[32;40m\]\`nonzero_return\` \$\d \e[m\]> "
+export PS1="${BRED}\`parse_git_branch\` ${BYELLOW}\w ${PGREEN}\`nonzero_return\`\d ${WHITE}${PROMPT_ARROW} "
