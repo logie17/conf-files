@@ -5,6 +5,10 @@ SSH_ENV="$HOME/.ssh/environment"
 PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:$HOME/bin:$HOME/go/bin:${PATH}"
 export PATH
 
+alias ll="ls -la"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
