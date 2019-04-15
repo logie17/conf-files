@@ -2,8 +2,7 @@
 # The original version is saved in .bash_profile.pysave
 SSH_ENV="$HOME/.ssh/environment"
 
-PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:$HOME/bin:$HOME/go/bin:${PATH}"
-export PATH
+export PATH="/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:$HOME/bin:$HOME/go/bin:${PATH}"
 
 alias ll="ls -la"
 alias ..="cd .."
@@ -16,3 +15,6 @@ alias lfh="du -ah . | sort -n -r | head -n 20"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# perlbrew
+source ~/perl5/perlbrew/etc/bashrc
