@@ -8,6 +8,8 @@ alias ll="ls -la"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+alias pf="git push --force-with-lease origin $(git rev-parse --abbrev-ref HEAD)"
+
 
 # Top 20 largest file in current directory
 alias lfh="du -ah . | sort -n -r | head -n 20"
@@ -18,3 +20,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # perlbrew
 source ~/perl5/perlbrew/etc/bashrc
+
+export PERSONAL_EMAIL_ADDRESS=loganbell@gmail.com
+export PERSONAL_IMAP_SERVER=imap.gmail.com
