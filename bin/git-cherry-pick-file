@@ -1,0 +1,9 @@
+# /usr/bin/env bash
+
+if [ "$#" -lt 2 ]; then
+   echo "Unexpected arguments expect: <sha> <file-path[,file-path...]>" && exit 1
+fi
+
+git show $1 -- ${@:2} | git apply -
+git add ${@:2}
+git commit -c $1
