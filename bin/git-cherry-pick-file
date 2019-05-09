@@ -1,4 +1,4 @@
-# /usr/bin/env bash
+#! /usr/bin/env bash
 
 if [ "$#" -lt 2 ]; then
    echo "Unexpected arguments expect: <sha> <file-path[,file-path...]>" && exit 1
