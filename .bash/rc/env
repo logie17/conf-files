@@ -10,9 +10,18 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias pf="git push --force-with-lease origin $(git rev-parse --abbrev-ref HEAD)"
 
-
 # Top 20 largest file in current directory
 alias lfh="du -ah . | sort -n -r | head -n 20"
+
+function create_alias {
+  alias=$1
+  description=$2
+  keywords=${@:3}
+  voitheia asdfindex "$alias" "$description" $keywords
+  alias "${alias}"
+}
+
+create_alias lfh="du -ah . | sort -n -r | head -n 20" "Top 20 largest files in current directory" "files" "disk size"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -23,3 +32,5 @@ source ~/perl5/perlbrew/etc/bashrc
 
 export PERSONAL_EMAIL_ADDRESS=loganbell@gmail.com
 export PERSONAL_IMAP_SERVER=imap.gmail.com
+
+source "/usr/local/etc/bash_completion.d/git-completion.bash"
