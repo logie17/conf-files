@@ -2,6 +2,10 @@
 # The original version is saved in .bash_profile.pysave
 SSH_ENV="$HOME/.ssh/environment"
 
+if which ruby >/dev/null && which gem >/dev/null; then
+  PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
+
 export PATH="/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:$HOME/bin:$HOME/go/bin:${PATH}"
 
 alias ll="ls -la"
